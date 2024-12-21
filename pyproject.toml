@@ -1,0 +1,26 @@
+[tool.pytest.ini_options]
+addopts = [
+    "-vv",
+    "--cov=.",
+    "--cov-report=term",
+    "--cov-fail-under=60",
+]
+pythonpath = "."
+
+
+[tool.mypy]
+files = ["application/*.py"]
+strict = true
+ignore_missing_imports = true
+
+
+[tool.ruff.lint]
+select = [
+    "E",  # pycodestyle errors
+    "W",  # pycodestyle warnings
+    "F",  # pyflakes
+    "I",  # isort
+    "B",  # flake8-bugbear
+    "C4",  # flake8-comprehensions
+    "UP",  # pyupgrade
+]

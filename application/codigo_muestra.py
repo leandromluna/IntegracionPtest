@@ -19,7 +19,7 @@ def main() -> None:
     result = add_numbers(5, 3)
     print(result)
 
-    greeting = greet(123)
+    greeting = greet("Charly")
     print(greeting)
     sleep(1)
 

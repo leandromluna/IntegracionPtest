@@ -4,19 +4,19 @@ from datetime import datetime
 import random
 
 
-def add_numbers(a, b):
+def add_numbers(a:float, b:float)  -> float:
     return a + b
 
-def greet(name):
+def greet(name:str) -> str:
     return "Hello, " + name
 
-def create_df_from_name(name):
+def create_df_from_name(name:str) -> pd.DataFrame:
     df = pd.DataFrame({"name": [name], "number": [random.random()]})
     # un comentario muy muy largo, tan largo que hacia que se disparar el linter porque no debe ser tan largo segun la regla de 88 caracteres
     return df
 
-def main():
-    result = add_numbers(5, "10")
+def main() -> None:
+    result = add_numbers(5, 3)
     print(result)
 
     greeting = greet(123)

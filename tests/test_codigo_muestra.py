@@ -9,3 +9,4 @@ def test_add_numbers():
 def test_greet():
     assert greet("Charly") == "Hello, Charly"
     assert greet("Rosa") == "Hello, Rosa"
+

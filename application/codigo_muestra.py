@@ -26,7 +26,7 @@ def main():
 
     items = [1, 2, 3, 4, 5]
     squared = [x * x if x % 2 == 0 else 0 for x in items]
-
+    ##comentario de test
     print(squared)
 
 

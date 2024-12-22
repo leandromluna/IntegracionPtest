@@ -1,7 +1,8 @@
-from time import sleep
-import pandas as pd
-from datetime import datetime
 import random
+from time import sleep
+
+import pandas as pd
+
 
 
 def add_numbers(a:float, b:float)  -> float:
@@ -12,7 +13,8 @@ def greet(name:str) -> str:
 
 def create_df_from_name(name:str) -> pd.DataFrame:
     df = pd.DataFrame({"name": [name], "number": [random.random()]})
-    # un comentario muy muy largo, tan largo que hacia que se disparar el linter porque no debe ser tan largo segun la regla de 88 caracteres
+    # un comentario muy muy largo, tan largo que hacia que se disparar 
+    # el linter porque no debe ser tan largo segun la regla de 88 caracteres
     return df
 
 def main() -> None:
